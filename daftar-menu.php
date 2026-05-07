@@ -33,8 +33,8 @@ $menu = mysqli_query($koneksi1, "SELECT * FROM `daftar_menu`");
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Daftar Menu restoran adly ngawi</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                        <a href="tambah_menu.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i>Tambah Menu</a>
                     </div>
 
                     <div class="card shadow mb-4">
@@ -77,8 +77,8 @@ $menu = mysqli_query($koneksi1, "SELECT * FROM `daftar_menu`");
                                                 <td> <?= $menu['stok']; ?></td>
                                                 <td><?= $menu['Jenis']; ?></td>
                                                 <td>
-                                                    <a href="" class="btn btn-primary">Edit</a>
-                                                    <a href="" class="btn btn-danger">Delete</a>
+                                                    <a href="tambah_stok.php?id=<?=$menu['id'];?>" class="btn btn-primary">tambah stok</a>
+                                                    <a href="hapus_menu.php?id=<?=$menu['id'];?>" class="btn btn-danger">Delete</a>
                                                 </td>
                                             </tr>
                                         <?php
