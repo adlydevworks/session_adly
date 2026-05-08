@@ -59,7 +59,7 @@ $menu = mysqli_query($koneksi1, "SELECT * FROM `daftar_menu`");
                                     </div>
                                 </div>
 
-                                <form action="proses_tambah_stok.php" method="POST">
+                                <form action="proses_tambah_menu.php" method="POST">
                                 <!-- Card Body -->
                                 <div class="card-body">
                                    <div class="row mb-3">
